@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+                <script src="reg.js"> </script>
+                <link rel="stylesheet" type="text/css" href="clr.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="mybody">
+        
+                <div id="div5" class="div1" align="right" style=" margin-top: 15%">
+                        <fieldset class="fs">
+
+                                        <form class="myclass">
+                                <table align="center">
+
+                                        <legend align="center">LOGIN USER</legend>
+                                        <p align="center"><span  id="span2"  ></span></p>
+                                        <tr>
+                                                <td>User Id</td>
+                                                <td><input type="text" id="uid1" /></td>
+                                        </tr>
+
+                                        <tr>
+                                                <td>Password</td>
+                                                <td><input type="text" id="psw1" /></td>
+                                        </tr>
+
+                                        <tr>
+                                                <td align="center"><input type="button" id="log" value="login" class="mybutton"
+                                                                onclick="login1()" />
+
+                                                </td>
+                                                <td align="center"><a href="REGISTER.html"><input type="button"
+                                                                        id="reg" value="signup" class="mybutton" /></a></td>
+                                        </tr>
+                                        <tr>
+                                                <td align="center"><input type="button" onclick="print1($('#uid1').val(), $('#psw1').val())" value="print" class="mybutton"/></td>
+                                        </tr>
+                                        
+
+                                </table>
+                               
+                        </form>
+                        
+
+
+                        </fieldset>
+                </div>
+                <div id="frm5" class="class5" style="display:none">
+                        
+                                        <span id="span1"  ></span>
+                                       
+
+                       
+
+                </div>
+        
+</body>
+
+</html>

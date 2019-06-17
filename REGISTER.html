@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="clr.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="mybody">
+
+    <div class="div1" align="right" style=" margin-top: 20px" id="div1">
+        <fieldset class="fs" id="f1">
+            <form id="f5" class="myclass">
+                <table align="center">
+
+                    <legend align="center" id="l1">Registration Form</legend>
+                    
+                    <tr>
+                        <td>User Id</td>
+                        <td><input type="text" id="uid" name="userid" onblur="uids()" required=""/></br><span id="p1"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>FirstName</td>
+                        <td><input type="text" id="fnam" name="FIRST NAME" onblur="firstname()" required="" /></br><span id="p2"></span></td>
+                    </tr>
+                    <tr>
+                        <td>LastName</td>
+                        <td><input type="text" id="lnam" name="LAST NAME" onblur="lnams()" required=""/></br><span id="p3"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" name="EMAIL" onblur="emails()" required=""/></br><span id="p4"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="psw" name="PASSWORD" onblur="psws()" required="" /></br><span id="p5"></span></td>
+                    </tr>
+                    <tr>
+                        <td>ReenterPassword</td>
+                        <td><input type="password" id="rpsw" onblur="psw1()" required=""/></br><span id="p6"></span>
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>DOB</td>
+                        <td><input type="date" id="dob" name="DOB" onblur="dobs()" required=""/></br><span id="p7"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio"  id="g1" name="g" value="male" />male
+                            <input type="radio" id="g2" name="g" value="female" />female</br><span id="p8"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea name="" id="add" cols="20" rows="5" name="ADDRESS" onblur="address()" onfocus="gend()" required=""></textarea></br><span
+                                id="p9"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center"><input type="submit" id="sub" class="mybutton" value="submit" onclick="save()" />
+                          
+
+                        </td>
+                        <td align="center"><a href="LOGIN.html">
+                                <input type="button" class="mybutton" id="log" value="login" onclick="" /></a></td>
+                    </tr>
+
+                </table>
+                <p id="rr"></p>
+            </form>
+        </fieldset>
+    </div>
+    <script src="reg.js"> </script>
+
+</body>
+
+</html>
